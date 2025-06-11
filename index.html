@@ -9,11 +9,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     .typing::after {
-  content: "UI/UX Designer | Frontend Developer | Freelancer";
+  
   animation: typing 4s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: .15em solid orange;
+  width: auto;
+}
+@media screen and (max-width: 300px) {
+  .typing::after{
+    width: 200px;
+    font-size: small;
+  }
 }
 
 @keyframes typing {
@@ -56,7 +63,7 @@
       Hi, I'm Raj Maharjan
     </h1>
     <p class="text-xl md:text-2xl mb-6 text-blue-700">
-      <span class="typing"></span>
+      <span class="typing "> UI/UX designer| Frontend Developer</span>
 </p>
 
     <div class="flex justify-center gap-6 text-xl">
